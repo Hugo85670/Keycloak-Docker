@@ -1,4 +1,4 @@
-FROM jboss/keycloak:7.0.1
+FROM jboss/keycloak:10.0.2
 
 COPY deployments /opt/jboss/keycloak/standalone/deployments
 
