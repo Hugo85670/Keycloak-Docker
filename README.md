@@ -1,7 +1,7 @@
 # Dockerfile keycloak
 ## Overview
 This is made to work on a server side, it can be adapted to work on local side.
-The keycloak version is the 7.0.1
+The keycloak version is the 10.0.2
 
 ## Server configuration
 The server environment variables will allow you to configure the keycloak database
