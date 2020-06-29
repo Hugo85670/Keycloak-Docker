@@ -8,8 +8,9 @@ The server environment variables will allow you to configure the keycloak databa
 
 -   KEYCLOAK_PASSWORD (Password for admin)
 -   KEYCLOAK_USER (Login admin)
--   PORT (Exposed port for docker, here 8080)
--   PROXY_ADDRESS_FORWARDING (An option to allow redirect uri behind a proxy)
+-   PORT (Exposed port for docker, here **8080**)
+-   PROXY_ADDRESS_FORWARDING (An option to allow redirect uri behind a proxy, here **true**)
+-   JAVA_OPTS (An option to enable keycloak >= v8.0 to build on a server, here **-Djgroups.bind_addr=127.0.0.1**)
    
 To connect to an external db (highly recommended for a server, or during a restart everything can be loast):
 
@@ -49,7 +50,7 @@ To fix this, connect to the database and update the realm table by doing:
 ```sql
 update realm set ssl_required='NONE';
 ```
-It will be usefull when a server manage by himself the ssh certificate (as on clevercloud)
+It will be usefull when a server manages by himself the ssh certificate (as on clevercloud)
 
 # Extensions
 
