@@ -55,13 +55,13 @@
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}">
                 <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 4>${properties.kcFormSocialAccountDoubleListClass!}</#if>">
                     <#list social.providers as p>
-                        <#if p.displayName != "France Connect Particulier">
+                        <#if p.displayName != "France Connect Particulier (Integration)">
                             <li class="${properties.kcFormSocialAccountListLinkClass!}"><a href="${p.loginUrl}" id="zocial-${p.alias}" class="zocial ${p.providerId}"> <span>${p.displayName}</span></a></li>
                         </#if>
                     </#list>
                 </ul>
                 <#list social.providers as p>
-                    <#if p.displayName = "France Connect Particulier">
+                    <#if p.displayName = "France Connect Particulier (Integration)">
                         <div class="${properties.kcFormFCAccountContentClass!}">
                             <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 4>${properties.kcFormSocialAccountDoubleListClass!}</#if>">
                                 <li style="text-align:center;" ><a href="${p.loginUrl}" id="zocial-${p.alias}"><img src="${url.resourcesPath}/img/FCboutons-11.svg" alt="france-connect" width="230" height="60"></a></li>

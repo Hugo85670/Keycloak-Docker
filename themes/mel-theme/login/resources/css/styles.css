@@ -1,0 +1,96 @@
+.login-pf {
+  background: none;
+}
+
+.login-pf body {
+  background-image: url('../img/filter.png'), url('../img/map.png');
+  background-size: cover;
+  height: 100%;
+}
+
+.login-pf-page {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+body::after {
+  content: ' ';
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  background-image: url('../img/logos.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.kc-logo-text {
+  background-image: url('../img/logo_halto_dechet.png');
+  height: 200px;
+  width: 446px;
+  background-size: 100%;
+  margin: auto;
+}
+
+
+div.card-pf {
+  background: #fcf6df;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 1px #4e4b5f;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  max-width: 540px;
+}
+
+.card-pf {
+  background: none;
+}
+
+#kc-content {
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  div.kc-logo-text {
+      width: 250px;
+      height: 120px;
+      background-size: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+  #kc-header-wrapper {
+    padding: 20px 10px 20px;
+  }
+
+  .login-pf-page .card-pf {
+    margin-right: 10% !important;
+    margin-left: 10% !important;
+
+  }
+}
+
+@media (max-height: 760px) {
+  body::after {
+    display:none;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-pf-page .login-pf-page-header {
+    margin-bottom:  0;
+  }
+}
+
+@media (max-width: 840px){
+  .login-pf-page .card-pf {
+    max-width: 540px;
+    margin: auto;
+  }
+}
